@@ -1,4 +1,8 @@
-# Code Manual für Deep Learning for Building Detection 
+# Code Anleitung - Deep Learning zur Einzelgebäudedetektion
+Für die Skripte, die während des Praktikums an der Universität Tübingen erarbeitet wurden. Der Code ist verfügbar unter: https://github.com/eagle20-k/InnovationLab
+
+Verfasst von Katrin Wernicke, am 08.04.2022.
+
 
 ## 1. Ordnerstruktur
 
@@ -16,16 +20,18 @@
 |              |tiles|         |*vorprozessierte Satellitenbilder- und Gebäudemaskenkacheln, 200x200m Kacheln, Inputordner für Modeltraining*|
 |              |AOI_2_VEGAS_processed|annotations|*rasterisierte Gebäudemaskenkacheln als JPG und PNG, Satellitenbildkacheln als TIF*|
 |              ||geojson|*Gebäudefootprints (Polygone)*|
-|              ||RGB-PanSharpen|||||*WorldView-3 RGB-Daten, pansharpened, 200x200m Kacheln*|
+|              ||RGB-PanSharpen|*WorldView-3 RGB-Daten, pansharpened, 200x200m Kacheln*|
 ||utilities||*Github Repository von SpaceNet zur Vorprozessierung für Trainingsdaten*|
-|2_Kigali        |Data|Raster|*Orginal Rasterbild, reskaliertes Rasterbild|
-|              |    |SHP |||  |||*Gebäudefootprints (Polygone)*|
+|2_Kigali        |Data|Raster|*Orginal Rasterbild, reskaliertes Rasterbild*|
+|              |    |SHP |*Gebäudefootprints (Polygone)*|
 |              |Predictions|2022-03-29-tiles_m5_subset_|*Rasterbildkacheln, Predicted Gebäudemaskenkacheln, Mosaik, Prediction mit 2015_Pleiades_Kigali_subset_.tif und Model 5*|
 |              ||2022-03-29-tiles_m16_subset_|*Rasterbildkacheln, Predicted Gebäudemaskenkacheln, Mosaik, Prediction mit 2015_Pleiades_Kigali_subset_.tif und Model 16*|
 |              ||2022-03-29-tiles_m17_subset_|*Rasterbildkacheln, Predicted Gebäudemaskenkacheln, Mosaik, Prediction mit 2015_Pleiades_Kigali_subset_.tif und Model 17*|
 |3_Notebooks|||*Jupyter Notebooks, Environment File*|
 |4_SpaceNetUnet|||*Original Github Repository von Alexey Bogatyrev*|
 
+
+<div style="page-break-after: always;"></div>
 
 
 ## 2. Umgebungseinrichtung: 
